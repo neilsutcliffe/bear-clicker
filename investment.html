@@ -1,0 +1,15 @@
+<div class="clearfix text-right investment">
+
+	<h5 class="name"><b class="pull-right">{{ source.quantity }}</b>{{ source.name }}</h5>
+	<div class=pull-left>
+		<button ng-disabled="!source.affordable" ng-click="buy()" class="buy-btn pull-left">
+			Buy
+		</button>
+		<span class="cost lead pull-left">
+			Cost: {{ source.cost }}
+			<br>
+			Income: {{ source.income}}/s
+		</span>
+	</div>
+	<span class="flavour-text">{{ source.snippet }}</span>
+</div>
